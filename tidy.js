@@ -17,6 +17,9 @@
         html { overflow-x: hidden; }
         body > main > article { overflow: visible; }
         .tidy-item:not(a) { cursor: grab; }
+        /* Shrink block items (headings, contact rows) to their text, so the box that moves,
+           and the centre the gripper grabs, match what you see rather than the full column width. */
+        .tidy-item:not(img) { width: fit-content; }
         .rotated-text-container p { pointer-events: auto; }
         .tidy-moved { position: relative; z-index: 1500; }
         .tidy-moved:not(img) { background-color: var(--background); box-shadow: 0 0 0 6px var(--background); border-radius: 2px; }
