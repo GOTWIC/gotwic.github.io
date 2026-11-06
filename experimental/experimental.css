@@ -1,0 +1,6 @@
+/* Overrides for the hidden experimental pages only. Loaded after default.css. */
+
+/* Turn every glyph with the vertical footer text, including the ❤. */
+.rotated-text-container {
+    text-orientation: sideways;
+}
