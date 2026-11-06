@@ -3,140 +3,111 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="theme-color" content="color(display-p3 0.992 0.924 0.843)" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="color(display-p3 0.157 0.145 .137)" media="(prefers-color-scheme: dark)">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Swagnik • Blog</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Posts by Swagnik Roychoudhury.">
+    <link rel="canonical" href="https://swagnik.org/blog/">
 
-    <link rel="shortcut icon" href="../images/heart.ico">
-    <link rel="icon" type="image/svg+xml" sizes="any" href="../images/heart.ico">
-    <link rel="apple-touch-icon" sizes="256x256" href="../images/heart.ico">
+    <meta name="theme-color" content="#fbf8f4" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#181818" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="../images/heart.ico" sizes="any">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
     <meta name="apple-mobile-web-app-title" content="Swagnik Roychoudhury">
     <meta name="application-name" content="Swagnik Roychoudhury">
-    <meta name="msapplication-TileColor" content="#fbf8f4">
-    <meta name="theme-color" content="#fbf8f4">
 
-    <link rel="stylesheet" href="../normalize.css" />
-    <link rel="stylesheet" href="../default.css" />
+    <meta property="og:title" content="Swagnik Roychoudhury • Blog">
+    <meta property="og:description" content="Posts by Swagnik Roychoudhury.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://swagnik.org/blog/">
+    <meta property="og:image" content="https://swagnik.org/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../default.css">
 </head>
 
 <body>
     <header id="site-header">
         <h1 id="site-title"><a href="../about/" class="padded">Swagnik Roychoudhury</a></h1>
-        <h1 id="site-title-small"><a href="../about/" class="padded">S.R</a></h1>
-        <nav class="header-links sans" style="font-weight: 500;">
+        <h1 id="site-title-small"><a href="../about/" class="padded">S.R.</a></h1>
+        <nav class="header-links sans">
             <a href="../about/" class="padded">About</a>
             <a href="../research/" class="padded">Research</a>
-            <a href="#" id="blog-link" class="padded">Blog</a>
+            <a href="../blog/" class="padded" aria-current="page">Blog</a>
         </nav>
     </header>
 
-    <main role="main">
+    <main>
         <article>
             <header>
                 <h1>Blog</h1>
             </header>
             <section>
                 <ul class="feed-list">
-                    <li><span id="left-date">2024-09-15</span> <span><a href="#" class="blog-link" data-blog="4">Catching Cyclical Citations</a></span></li>
-                    <!--  <li><span id="left-date">2024-07-26</span> <span><a href="#" class="blog-link" data-blog="3">Hacking Warframe's Servers</a></span></li> -->
-                    <li><span id="left-date">2024-03-12</span> <span><a href="#" class="blog-link" data-blog="2">Valorant Aimbot</a></span></li>
-                    <li><span id="left-date">2024-01-29</span> <span><a href="#" class="blog-link" data-blog="1">Mathematics in Music</a></span></li>
+                    <li><span class="date">2024-09-15</span> <span><a href="#post-4" class="blog-link" aria-controls="post-4">Catching Cyclical Citations</a></span></li>
+                    <li><span class="date">2024-03-12</span> <span><a href="#post-2" class="blog-link" aria-controls="post-2">Valorant Aimbot</a></span></li>
+                    <li><span class="date">2024-01-29</span> <span><a href="#post-1" class="blog-link" aria-controls="post-1">Mathematics in Music</a></span></li>
                 </ul>
             </section>
         </article>
     </main>
 
-    
-    <aside id="sidebar-4" class="sidebar">
-        <h1>Catching Cyclical Citations</h1>
+    <aside id="post-4" class="sidebar" aria-labelledby="post-4-title">
+        <button type="button" class="sidebar-close" aria-label="Close post">&times;</button>
+        <h1 id="post-4-title">Catching Cyclical Citations</h1>
         <p>
-          Citations are a big part of a researcher's popularity and credibility. The more citatons an author has, the more likely their work is impactful and influential.
-          Therefore, it is not difficult to imagine that some authors might be tempted to artificially inflate their citation count.
+            Citations are a big part of a researcher&rsquo;s popularity and credibility. The more citations an author has, the more likely their work is impactful and influential.
+            Therefore, it is not difficult to imagine that some authors might be tempted to artificially inflate their citation count.
         </p>
         <p>
-          Generally speaking, there are two well-known ways an author can inflate citation count:
+            Generally speaking, there are two well-known ways an author can inflate citation count:
         </p>
-        <ul class="indented-list">
-          <li><b>Paper Factories</b> - Paper factories are when researchers, often professors, amass a large number of PhD students, post-docs, and interns to constantly churn out papers, often with little to no original content.
-            Even when the researcher contributed barely anything to the paper, they are still listed as a co-author, and thus are able to increase their citation count anytime the paper is cited.
-            However, these are difficult to catch, as the author's contribution is often not defined, and even then, it would take time to read through each and every paper the author produced.
-          </li>
-          <li><b>Citation Rings</b> - Citation Rings are when researchers agree with others to cite each other - or in other words, collude with each other. 
-            This is also difficult to catch, because in can be hard to tell a genuine citation from a fabricated one.
-          </li>
+        <ul>
+            <li><b>Paper Factories</b> - Paper factories are when researchers, often professors, amass a large number of PhD students, post-docs, and interns to constantly churn out papers, often with little to no original content.
+                Even when the researcher contributed barely anything to the paper, they are still listed as a co-author, and thus are able to increase their citation count anytime the paper is cited.
+                However, these are difficult to catch, as the author&rsquo;s contribution is often not defined, and even then, it would take time to read through each and every paper the author produced.
+            </li>
+            <li><b>Citation Rings</b> - Citation Rings are when researchers agree with others to cite each other - or in other words, collude with each other.
+                This is also difficult to catch, because it can be hard to tell a genuine citation from a fabricated one.
+            </li>
         </ul>
         <p>
-          However, there is a subset of Citation Rings which is relatively easy to track, which is Cyclical Citations. As the name implies, this is when a researcher cites a previous paper they wrote in the current paper.
-          This is not inherently bad, as it is common for researchers to build upon their previous work. But when a researcher does this excessively, it can be a sign of inflating citation count.
+            However, there is a subset of Citation Rings which is relatively easy to track, which is Cyclical Citations. As the name implies, this is when a researcher cites a previous paper they wrote in the current paper.
+            This is not inherently bad, as it is common for researchers to build upon their previous work. But when a researcher does this excessively, it can be a sign of inflating citation count.
         </p>
         <p>
-          In order to see how many of a researcher's citations are self-citations, I wrote a python script in a few hours that scrapes the researcher's Google Scholar page. 
-          After getting a list of publications, it retrieves the citations for each paper from semantic scholar.
-          Then, it checks how many of the citations have the researcher listed as an author.
+            In order to see how many of a researcher&rsquo;s citations are self-citations, I wrote a Python script in a few hours that scrapes the researcher&rsquo;s Google Scholar page.
+            After getting a list of publications, it retrieves the citations for each paper from Semantic Scholar.
+            Then, it checks how many of the citations have the researcher listed as an author.
         </p>
         <p>
-          Writing the script was harder than I initially thought, mainly becuase Google Scholar heavily limits web-scrpaing ability.
-          Using proxies, I was able to get around the limitations at the cost of speed.
-          Hence the script can take between 3-10+ minutes to run, depending on the number of papers the researcher has.
+            Writing the script was harder than I initially thought, mainly because Google Scholar heavily limits web-scraping ability.
+            Using proxies, I was able to get around the limitations at the cost of speed.
+            Hence the script can take between 3-10+ minutes to run, depending on the number of papers the researcher has.
         </p>
         <p>
-          The results are interesting. I won't name specific researchers, but I found that some researchers had over 10% of their citations as self-citations. 
-          I have released the beta version of the code on my github, and I encourage others to check it out if they suspect a researcher of inflating their citation count.
-          I will work on an optimized version of the code in the future when I get more time.
+            The results are interesting. I won&rsquo;t name specific researchers, but I found that some researchers had over 10% of their citations as self-citations.
+            I have released the beta version of the code on my <a href="https://github.com/GOTWIC" target="_blank" rel="noopener noreferrer">GitHub</a>, and I encourage others to check it out if they suspect a researcher of inflating their citation count.
+            I will work on an optimized version of the code in the future when I get more time.
         </p>
-        <p>
-          
-        </p>
-        <div style="height: 2rem;"></div> 
     </aside>
 
-    <aside id="sidebar-3" class="sidebar">
-      <h1>Hacking into Warframe's Communication Servers</h1>
-      <p> 
-        Warframe is a free-to-play space-themed third-person shooter developed by Digital Extremes, with millions of players across the globe. 
-        Not only is the game one of the most popular games ever created - consistently being in the top 30 active players for the past decade - but also my most played game.
-      </p>
-      <p>
-        Back when I used to code for fun, I'd often write c++ scripts to create tools for various things in my life such as music and chess, and Warframe was no exception.
-        The habit persisted and eventually my suite of tools grew into excel damage calculators, java script discord bots, and python scripts for in-game image processing.
-      </p>
-      <p>
-        Thus it comes to no surprise that when I heard a rumor a few months ago that there was a vulnerability in Warframe's authentication process, I was instantly intruiged.
-        Access into Warframe's communication server would allow for the creation of trading bot faster than any other bot on the market. 
-        In the past few years, multiple bots have been developed by various players (including me), but lack of internal access has made the bots limited and laggy.
-      </p>
-      <p>
-        Such an exploit would not affect gameplay, nor 99.99% of the player base. 
-        However, a bot with instant access to the server would provide a handful of players a trading edge over the ~200 or so players that trade high value items (often worth thousands of dollars) on a daily basis.
-      </p>
-      <p>
-        Unfortunately, the only person who knew about the vulnerability was a supposed 17-year old Russian hacker by the name Redlim, who was unwilling to share the details with anyone. 
-        This was expected as he was making a fortune charging $100/month for access to his bot.
-      </p>
-
-      <p>[THIS ARTICLE IS IN PROGRESS]</p>
-      <p> </p>
-  </aside>
-
-    <aside id="sidebar-2" class="sidebar">
-      <h1>An (almost) Fully Working Valorant Aimbot</h1>
-      <p> [COMING SOON]</p>
+    <aside id="post-2" class="sidebar" aria-labelledby="post-2-title">
+        <button type="button" class="sidebar-close" aria-label="Close post">&times;</button>
+        <h1 id="post-2-title">An (almost) Fully Working Valorant Aimbot</h1>
+        <p>[COMING SOON]</p>
     </aside>
 
-    <aside id="sidebar-1" class="sidebar">
-      <h1>Kathak Saangi: The Math Behind the Music</h1>
-      <p> [COMING SOON]</p>
+    <aside id="post-1" class="sidebar" aria-labelledby="post-1-title">
+        <button type="button" class="sidebar-close" aria-label="Close post">&times;</button>
+        <h1 id="post-1-title">Kathak Saangi: The Math Behind the Music</h1>
+        <p>[COMING SOON]</p>
     </aside>
 
-    <div class="rotated-text-container">
+    <div class="rotated-text-container" aria-hidden="true">
         <p>Made with <span class="heart">❤</span> by Swagnik Roychoudhury</p>
     </div>
 
-    <!-- Include external JavaScript file -->
     <script src="script.js"></script>
 </body>
 
